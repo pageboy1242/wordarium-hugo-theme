@@ -1,0 +1,34 @@
+.button {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: 1rem;
+    transition: all .2s;
+    position: relative;
+    border: none;
+    margin: auto;
+
+    &:hover {
+        transform: translateY(-3px);
+
+
+    }
+
+    &-primary {
+        background-color: rgba($button-primary-background, 1);
+        color: $button-primary-color;
+
+        &:after {
+            background-color: rgba($button-primary-background, 1);
+            color: $button-primary-color;
+        }
+    }
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
