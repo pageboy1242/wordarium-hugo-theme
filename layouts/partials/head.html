@@ -5,6 +5,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
 
-    {{ $style := resources.Get "css/style.css" | minify }}
+    {{ $options := (dict "targetPath" "css/style.css") }}
+    {{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options | minify }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
 </head>

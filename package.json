@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "node-sass -w ./static/css/sass/main.scss ./assets/css/style.css"
+    "compile:sass": "node-sass -w ./assets/sass/style.scss ./assets/css/style.css"
   },
   "author": "Seann Hicks",
   "license": "ISC",
