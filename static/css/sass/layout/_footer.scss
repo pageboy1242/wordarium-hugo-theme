@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    color: #fff;
+    background-color: $footer-background;
+
+    .col {
+        margin-top: 50px;
+        flex: 1 0;
+
+        &-title {
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+            margin: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            li {
+                a {
+                    color: $footer-title-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

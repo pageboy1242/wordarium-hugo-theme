@@ -3,16 +3,20 @@
  position: relative; background-size: cover;">
     <div class="banner-text-block">
         <div>
+            <span class="banner-text-block__preheading">Welcome to</span>
             {{ with .Site.Params.banner.heading }}
             <h1>{{ . | markdownify }}</h1>
             {{ end }}
-            <p>Nam quis fringilla massa. Cras pulvinar nisl ac gravida elementum. Donec metus lectus, efficitur non blandit nec, rutrum non tellus. Proin quis mollis ex. Morbi non lectus molestie, ornare neque nec, sagittis tortor. Proin nec nunc pretium, euismod libero non, vehicula mauris. Vivamus posuere ligula vel elit suscipit dictum.</p>
+            {{ with .Site.Params.banner.headingtext }}
+            <p>{{ . }}</p>
+            {{ end }}
             <div class="button-row">
                 <a class="button button-primary" href="#">Read More</a>
             </div>
         </div>
     </div>
 </section>
+
 <h1>Hello, world!</h1>
 <h1>Hello, world!</h1>
 <h1>Hello, world!</h1>
