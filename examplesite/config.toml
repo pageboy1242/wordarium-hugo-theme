@@ -1,0 +1,10 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "wordarium"
+
+# banner
+[params.banner]
+heading = "Wordarium"
+headingtext = "Nam quis fringilla massa. Cras pulvinar nisl ac gravida elementum. Donec metus lectus, efficitur non blandit nec, rutrum non tellus. Proin quis mollis ex. Morbi non lectus molestie, ornare neque nec, sagittis tortor. Proin nec nunc pretium, euismod libero non, vehicula mauris. Vivamus posuere ligula vel elit suscipit dictum."
+image = "img/syd-wachs-slItfWbhijc-unsplash-scaled.jpg"
